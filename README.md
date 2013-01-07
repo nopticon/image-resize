@@ -1,0 +1,2 @@
+multi-image-resize
+==================
