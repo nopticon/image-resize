@@ -486,7 +486,7 @@ class upload
 	private function rotate($source, $destination, $degrees)
 	{
 		$image = imagecreatefromjpeg($source);
-		$rotate = imagerotate($image, $degrees);
+		$rotate = imagerotate($image, $degrees, 0, 0);
 		
 		imagejpeg($rotate, $destination);
 		imagedestroy($image);
